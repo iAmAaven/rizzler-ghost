@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 3d35a4f7c3038664a894993e8d7f0d47
+  - enabled: 1
+    path: Assets/Scenes/W1Tutorial.unity
+    guid: 31a5a801e5f36e3419085425150e6466
+  - enabled: 1
+    path: Assets/Scenes/W1Tutorial2.unity
+    guid: cecbf655b679e9a43a1882340e624ad9
+  - enabled: 1
+    path: Assets/Scenes/Room1.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Room2.unity
+    guid: 8cfd66e6f6a8d17468661b307f5e58fd
+  - enabled: 1
+    path: Assets/Scenes/Room3.unity
+    guid: b60b7ad95fc553e459798927b9d95aff
+  - enabled: 1
+    path: Assets/Scenes/Room4.unity
+    guid: 89b2a732abd4940448cf13639d16338c
+  - enabled: 1
+    path: Assets/Scenes/Room5.unity
+    guid: c4bcc9b4a7d7c7b4a864a07b6554f380
+  - enabled: 1
+    path: Assets/Scenes/Room6.unity
+    guid: 73bcbfcc1ba4dd046b44efc150f96bb5
+  - enabled: 1
+    path: Assets/Scenes/Room7.unity
+    guid: 083b7407353dd5d449ef3c9b9ee5b587
+  - enabled: 1
+    path: Assets/Scenes/Room8.unity
+    guid: 4beca49c825da554aa1d2a87f3592cc5
+  - enabled: 1
+    path: Assets/Scenes/Room9.unity
+    guid: efdd72df4e01e234388bd89434524b6b
+  - enabled: 1
+    path: Assets/Scenes/Room10.unity
+    guid: 593f6b1bcd67c3b429953b87171c128d
+  - enabled: 1
+    path: Assets/Scenes/Room11.unity
+    guid: 1280ecec01e135e4aa53dd796b61c8f0
+  - enabled: 1
+    path: Assets/Scenes/Room12.unity
+    guid: 179a9c273dfe3ef4382f5f64131355d3
+  - enabled: 1
+    path: Assets/Scenes/Room13.unity
+    guid: 5af322980bed8be4293bc0660b8a8a3d
+  - enabled: 1
+    path: Assets/Scenes/Room13.unity
+    guid: 5af322980bed8be4293bc0660b8a8a3d
+  - enabled: 1
+    path: Assets/Scenes/Room14.unity
+    guid: 364850bced5076744a95df4f3561389f
+  - enabled: 1
+    path: Assets/Scenes/LastScene.unity
+    guid: c81d10c5c1a51fe44b525bfc79e954f6
+  - enabled: 1
+    path: Assets/Scenes/Room15.unity
+    guid: 2818ad9b06c65a14cb519c9f3046beb2
+  m_configObjects: {}

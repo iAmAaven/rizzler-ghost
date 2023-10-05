@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - MoveableObject
+  - Door
+  - NPC
+  - Ground
+  - Background
+  - Foreground
+  - GrabPoint
+  - UniversalParent
+  - Wall
+  - Danger
+  - BlueStar
+  - Lever
+  - Hook
+  - IgnoreCollision
+  - MagnetGun
+  - Magnet
+  - LightBox
+  - Particle
+  - MusicSlider
+  - Menu
+  - Music
+  - MagnetGunNULL
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Player
+  - Background
+  - Foreground
+  - Ground
+  - Enemy
+  - NPC
+  - Door
+  - Object
+  - Walls
+  - Danger
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 774729509
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Door
+    uniqueID: 659288235
+    locked: 0
+  - name: Object
+    uniqueID: 1421358197
+    locked: 0
+  - name: Danger
+    uniqueID: 1289547421
+    locked: 0
+  - name: Ground
+    uniqueID: 2807547415
+    locked: 0
+  - name: Enemy
+    uniqueID: 406852673
+    locked: 0
+  - name: NPC
+    uniqueID: 1484357103
+    locked: 0
+  - name: Player
+    uniqueID: 2188878345
+    locked: 0
+  - name: Walls
+    uniqueID: 3758684709
+    locked: 0
+  - name: Foreground
+    uniqueID: 725409543
+    locked: 0
