@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 46038854}
   m_Layer: 13
   m_Name: Corner_2
-  m_TagString: Untagged
+  m_TagString: IgnoreCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -333,7 +333,7 @@ GameObject:
   - component: {fileID: 112556198}
   m_Layer: 13
   m_Name: Corner_1
-  m_TagString: Untagged
+  m_TagString: IgnoreCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4300,7 +4300,7 @@ GameObject:
   - component: {fileID: 1257533080}
   m_Layer: 13
   m_Name: Corner_3
-  m_TagString: Untagged
+  m_TagString: IgnoreCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5042,7 +5042,7 @@ GameObject:
   - component: {fileID: 1872283768}
   m_Layer: 13
   m_Name: Corner_4
-  m_TagString: Untagged
+  m_TagString: IgnoreCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9229,8 +9229,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.5055997, y: -0.9954, z: 0}
-    m_Extent: {x: 7.0018997, y: 2.5051, z: 0}
+    m_Center: {x: -1.497, y: -0.99985, z: 0}
+    m_Extent: {x: 7.0043, y: 2.50345, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -9650,8 +9650,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0059000254, y: -0.010299981, z: 0}
-    m_Extent: {x: 1.543, y: 1.7702999, z: 0}
+    m_Center: {x: -0.0042500496, y: -0.011650026, z: 0}
+    m_Extent: {x: 1.54995, y: 1.7706499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.5
