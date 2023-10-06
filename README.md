@@ -19,3 +19,9 @@ In W2, Rizzler has acquired the ability to control the magnet balls through the 
 ## Thank you
 Thank **you** for showing interest in my first ever video game.  
 **Special thanks to the playtesters for their time, input and help.** 🖤
+  
+## Copyright Notice
+All content in this repository is the intellectual property of Aapo Harjunpää and is protected by copyright law.  
+Any unauthorized use, distribution, or reproduction of this content without permission is strictly prohibited.  
+© 2023 Aapo Harjunpää  
+Thank you for respecting my creative work!
