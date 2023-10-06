@@ -21,7 +21,7 @@ Thank **you** for showing interest in my first ever video game.
 **Special thanks to the playtesters for their time, input and help.** 🖤
   
 ### Copyright Notice
-All content in this repository is the intellectual property of Aapo Harjunpää and is protected by copyright law.  
+All original content in this repository is the intellectual property of Aapo Harjunpää and is protected by copyright law.  
 Any unauthorized use, distribution, or reproduction of this content without permission is strictly prohibited.  
 © 2023 Aapo Harjunpää  
 ### License
