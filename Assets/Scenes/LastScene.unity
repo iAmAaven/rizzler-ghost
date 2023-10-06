@@ -4213,6 +4213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfc4b12088634d74da59224b241315cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToMainMenu: 14
   anim: {fileID: 1356842118}
   possibleGhosts:
   - {fileID: 2113219281}
@@ -9737,8 +9738,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 2.4976497, y: 0.33744997, z: 0}
-    m_Extent: {x: 10.50485, y: 1.6573501, z: 0}
+    m_Center: {x: 2.49975, y: 0.34219998, z: 0}
+    m_Extent: {x: 10.49675, y: 1.6643, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

@@ -14,9 +14,6 @@ public class DeathManager : MonoBehaviour
         // LOCATES THE SCRIPTS USED TO CONTROL BlueStar PROGRESS
         BlueStar blueStar = FindAnyObjectByType<BlueStar>();
 
-        if (blueStar == null)
-            return;
-
         blueStarManager = FindAnyObjectByType<BlueStarManager>();
         StarUI starUI = FindAnyObjectByType<StarUI>();
 

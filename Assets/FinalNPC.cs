@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FinalNPC : MonoBehaviour
 {
+    public float timerToMainMenu;
     public Animator anim;
     public GameObject[] possibleGhosts;
     private GameObject ghost;
@@ -40,6 +42,13 @@ public class FinalNPC : MonoBehaviour
             collider.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             collider.gameObject.GetComponent<PlayerMovement>().enabled = false;
             Destroy(collider.gameObject, 1.5f);
+
+            Invoke("SwitchScene", timerToMainMenu);
         }
+    }
+
+    void SwitchScene()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }
