@@ -811,7 +811,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9062506395938396302}
   - component: {fileID: 1620811189218788653}
-  - component: {fileID: 2356882161285158453}
   m_Layer: 6
   m_Name: jumpSFX
   m_TagString: Untagged
@@ -843,7 +842,7 @@ AudioSource:
   m_GameObject: {fileID: 6946762046538778762}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 8843936854155362832, guid: 0ccad16c4dac2b840b0056340b81d459, type: 2}
   m_audioClip: {fileID: 8300000, guid: fc44cc6ac5509d74087fe527ef12c04a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -930,15 +929,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2356882161285158453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6946762046538778762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dddf8d49d6ba0141ae39ab54b7e3422, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

@@ -807,6 +807,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddae8de74a57c164291aa99a49f2ff4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorCloseTimer: 0
   anim: {fileID: 703089704436019014}
   doorClosingSFX: {fileID: 5640007022421360614}
   doorOpeningSFX: {fileID: 2347745795654114583}
@@ -866,7 +867,7 @@ AudioSource:
   m_GameObject: {fileID: 8508119071553520572}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 8843936854155362832, guid: 0ccad16c4dac2b840b0056340b81d459, type: 2}
   m_audioClip: {fileID: 8300000, guid: 3e40a4a0e2a09874b9d84bd1b5ef8946, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.6
@@ -962,7 +963,7 @@ AudioSource:
   m_GameObject: {fileID: 8508119071553520572}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 8843936854155362832, guid: 0ccad16c4dac2b840b0056340b81d459, type: 2}
   m_audioClip: {fileID: 8300000, guid: 3099a5ab77d9979409342b7644e9f3fc, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.6

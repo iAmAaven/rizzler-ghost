@@ -12,10 +12,6 @@ public class BouncePlatform : MonoBehaviour
         bounceSFX = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
     }
-    void Update()
-    {
-        bounceSFX.volume = PlayerPrefs.GetFloat("sfxVolume");
-    }
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player"

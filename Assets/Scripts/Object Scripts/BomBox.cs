@@ -38,11 +38,6 @@ public class BomBox : MonoBehaviour
         explosionAnim = GetComponent<Animator>();
     }
 
-    void Update()
-    {
-        explosionSFX.volume = PlayerPrefs.GetFloat("sfxVolume");
-    }
-
     void Explode()
     {
         // instantiate box parts to fly off to random direction

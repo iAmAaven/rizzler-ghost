@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
 
 public class SFXSlider : MonoBehaviour
 {
-    public Slider slider;
+    public Slider sfxSlider;
+    public AudioMixer audioMixer;
 
     void Start()
     {
-        slider.value = PlayerPrefs.GetFloat("sfxVolume");
+        sfxSlider.value = PlayerPrefs.GetFloat("sfxVolume");
     }
     public void VolumeChange()
     {
-        PlayerPrefs.SetFloat("sfxVolume", slider.value);
+        audioMixer.SetFloat("sfxVolume", Mathf.Log10(sfxSlider.value) * 20);
+        PlayerPrefs.SetFloat("sfxVolume", sfxSlider.value);
     }
 }

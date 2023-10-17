@@ -9,7 +9,7 @@ public class BoxCorner : MonoBehaviour
     void Start()
     {
         boxSFX.volume = 0;
-        Invoke("UnmuteAudio", 0.5f);
+        Invoke("UnmuteAudio", 1f);
     }
     void OnTriggerEnter2D(Collider2D collider)
     {
@@ -27,10 +27,6 @@ public class BoxCorner : MonoBehaviour
                 boxSFX.Play();
             }
         }
-    }
-    void Update()
-    {
-        boxSFX.volume = PlayerPrefs.GetFloat("sfxVolume");
     }
 
     void UnmuteAudio()

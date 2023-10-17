@@ -298,7 +298,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b8686330b4c3cd4f848e31af01d19fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 2127152134080547907}
+  sfxSlider: {fileID: 2127152134080547907}
+  audioMixer: {fileID: 24100000, guid: 0ccad16c4dac2b840b0056340b81d459, type: 2}
 --- !u!1 &1909618540032215309
 GameObject:
   m_ObjectHideFlags: 0
@@ -2692,7 +2693,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 145735627978617825}
   m_HandleRect: {fileID: 5459669888670850024}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.00001
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 0.625
@@ -2723,4 +2724,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e09dc572eff9de4dad9702e61db158d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicVolumeSlider: {fileID: 7165350533304396282}
+  musicSlider: {fileID: 7165350533304396282}
+  audioMixer: {fileID: 24100000, guid: 0ccad16c4dac2b840b0056340b81d459, type: 2}

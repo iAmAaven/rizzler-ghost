@@ -29,9 +29,6 @@ using UnityEngine.InputSystem;
     Assign the layers to whatIsObject LayerMask variable, where the objects you want to pick up with the magnet, are
         (See instructions in PickableObject.cs for creating a moveable object)
 
-
-    THE LINES OF CODE MARKED WITH A COMMENT AT THE END, CAN BE DELETED WITHOUT IT AFFECTING PERFORMANCE OF THE GUN
-
 */
 
 public class MagnetGun : MonoBehaviour
@@ -49,7 +46,7 @@ public class MagnetGun : MonoBehaviour
     public GameObject magnetPrefab;
     public Transform magnetSprite;
     public Transform firePoint;
-    public Animator pullGunAnim;                                                                /* ANIMATION IS NOT NECESSARY */
+    public Animator pullGunAnim;
     public LayerMask whatIsObject;
     public ThrowSFX throwSFX;
 
@@ -61,21 +58,21 @@ public class MagnetGun : MonoBehaviour
     private Camera mainCamera;
     private Vector2 mousePosition;
     private GameObject magnet;
-    private PauseMenu pauseMenu;                                                                /**/
+    private PauseMenu pauseMenu;
 
     void Awake()
     {
         // Find references to other scripts and components when the object is created
 
-        pauseMenu = FindAnyObjectByType<PauseMenu>();                                           /**/
+        pauseMenu = FindAnyObjectByType<PauseMenu>();
         mainCamera = Camera.main;
     }
 
     private void Update()
     {
         // Check if the game is not paused
-        if (pauseMenu.isGamePaused == false)                                                    /**/
-        {                                                                                       /**/
+        if (pauseMenu.isGamePaused == false)
+        {
             // Check if the gun is touching an object within the detection radius
             isTouchingAnObject = Physics2D.OverlapCircle(
                 new Vector2(firePoint.position.x - 0.125f, firePoint.position.y), detectionRadius, whatIsObject);
@@ -104,15 +101,15 @@ public class MagnetGun : MonoBehaviour
             }
 
             // Call the animation function
-            AnimatePullGun();                                                                   /**/
-        }                                                                                       /**/
+            AnimatePullGun();
+        }
     }
 
     // Called when the Shoot action is triggered
     public void Shoot(InputAction.CallbackContext context)
     {
         // Check if the game is not paused and the gun is not touching an object
-        if (pauseMenu.isGamePaused == false && isTouchingAnObject == false)                     /* PAUSEMENU CAN BE DELETED */
+        if (pauseMenu.isGamePaused == false && isTouchingAnObject == false)
         {
             // Check if the shoot action was performed and the gun hasn't been shot yet
             if (context.performed && hasBeenShot == false)
@@ -131,7 +128,7 @@ public class MagnetGun : MonoBehaviour
     }
 
     // Handle the gun animation
-    void AnimatePullGun()                                                                       /* IF YOU DON'T WANT TO ANIMATE THE GUN, YOU CAN DELETE THIS METHOD*/
+    void AnimatePullGun()
     {
         if (hasBeenShot == true)
         {
