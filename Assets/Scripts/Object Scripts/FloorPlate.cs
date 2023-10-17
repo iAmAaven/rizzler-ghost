@@ -14,11 +14,6 @@ public class FloorPlate : MonoBehaviour
 
     private bool activated = false;
 
-    void Update()
-    {
-        doorClosingSFX.volume = PlayerPrefs.GetFloat("sfxVolume");
-        doorOpeningSFX.volume = PlayerPrefs.GetFloat("sfxVolume");
-    }
     void OnTriggerEnter2D(Collider2D collider)
     {
         if (activated == false)

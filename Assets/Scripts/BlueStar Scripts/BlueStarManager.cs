@@ -22,10 +22,6 @@ public class BlueStarManager : MonoBehaviour
             Destroy(blueStar.gameObject);
         }
     }
-    void Update()
-    {
-        blueStarSFX.volume = PlayerPrefs.GetFloat("sfxVolume");
-    }
     public void SaveData()
     {
         saveSystem.SaveIntData(blueStarSaveName, starGotten);

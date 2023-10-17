@@ -12,9 +12,6 @@ public class Magnet : MonoBehaviour
     public float letGoTimer;
     public float breakAnimLength = 0.25f;
 
-    [Header("References")]
-    public AudioSource magnetSFX;
-
     // Hidden variable accessible from other scripts
     [HideInInspector] public bool grabbed = false;
 
@@ -29,7 +26,6 @@ public class Magnet : MonoBehaviour
     {
         // Get references to components and adjust settings based on MagnetGun
         anim = GetComponent<Animator>();
-        magnetSFX = GetComponent<AudioSource>();
         circleCollider = GetComponent<CircleCollider2D>();
         rb = GetComponent<Rigidbody2D>();
         magnetGun = FindAnyObjectByType<MagnetGun>();
@@ -39,8 +35,6 @@ public class Magnet : MonoBehaviour
 
     void Update()
     {
-        magnetSFX.volume = PlayerPrefs.GetFloat("sfxVolume");
-
         // If an object is currently grabbed
         if (grabbedObject != null)
         {

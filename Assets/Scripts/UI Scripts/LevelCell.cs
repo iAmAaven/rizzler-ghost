@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class LevelCell : MonoBehaviour
 {
-    public string roomToLoad;
     public string saveDataName;
     public GameObject starImage;
     private TextMeshProUGUI numberText;
@@ -15,10 +14,6 @@ public class LevelCell : MonoBehaviour
     {
         numberText = GetComponentInChildren<TextMeshProUGUI>();
         UpdateBlueStars();
-    }
-    public void ChangeSceneTo()
-    {
-        SceneManager.LoadScene(roomToLoad);
     }
 
     public void UpdateBlueStars()

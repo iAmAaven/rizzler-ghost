@@ -17,8 +17,10 @@ public class DeathManager : MonoBehaviour
         blueStarManager = FindAnyObjectByType<BlueStarManager>();
         StarUI starUI = FindAnyObjectByType<StarUI>();
 
-        starUI.BlueStarLost();
+        if (starUI == null)
+            return;
 
+        starUI.BlueStarLost();
 
         // THE PURPOSE OF THE NEXT IF STATEMENT IS TO CHECK IF THE PLAYER HAS ALREADY GOTTEN THE BlueStar
         // IN THE CURRENT SCENE. IF THEY HAVE, THE BLUESTAR WILL NOT BE SPAWNED. OR RATHER, IT WILL BE DESTROYED.

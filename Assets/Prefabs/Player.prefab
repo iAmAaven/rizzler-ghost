@@ -416,7 +416,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1444011150104987460}
   - component: {fileID: 2531472365836071189}
-  - component: {fileID: 375842612471084815}
   m_Layer: 6
   m_Name: jumpSFX
   m_TagString: Untagged
@@ -448,7 +447,7 @@ AudioSource:
   m_GameObject: {fileID: 3549679250462882702}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 8843936854155362832, guid: 0ccad16c4dac2b840b0056340b81d459, type: 2}
   m_audioClip: {fileID: 8300000, guid: fc44cc6ac5509d74087fe527ef12c04a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -535,18 +534,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &375842612471084815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3549679250462882702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dddf8d49d6ba0141ae39ab54b7e3422, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3673003072740201073
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,7 +628,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6450335385844695189}
   - component: {fileID: 2902750614771656002}
-  - component: {fileID: 8750501020616229507}
   - component: {fileID: 8740795871583390306}
   m_Layer: 6
   m_Name: throwSFX
@@ -674,7 +660,7 @@ AudioSource:
   m_GameObject: {fileID: 4595797435335980834}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 8843936854155362832, guid: 0ccad16c4dac2b840b0056340b81d459, type: 2}
   m_audioClip: {fileID: 8300000, guid: fc44cc6ac5509d74087fe527ef12c04a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -761,18 +747,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &8750501020616229507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4595797435335980834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dddf8d49d6ba0141ae39ab54b7e3422, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8740795871583390306
 MonoBehaviour:
   m_ObjectHideFlags: 0

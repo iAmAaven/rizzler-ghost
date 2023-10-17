@@ -85,11 +85,11 @@ TagManager:
   - name: NPC
     uniqueID: 1484357103
     locked: 0
-  - name: Player
-    uniqueID: 2188878345
-    locked: 0
   - name: Walls
     uniqueID: 3758684709
+    locked: 0
+  - name: Player
+    uniqueID: 2188878345
     locked: 0
   - name: Foreground
     uniqueID: 725409543

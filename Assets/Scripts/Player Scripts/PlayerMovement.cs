@@ -85,9 +85,12 @@ public class PlayerMovement : MonoBehaviour
     {
         if (pauseMenu.isGamePaused == false)
         {
+            if (context.performed && isGrounded)
+            {
+                jumpSFX.Play();
+            }
             if (context.started && isGrounded)
             {
-                jumpSFX.PlayOneShot(jumpSFX.clip);
                 anim.SetTrigger("Jump");
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             }

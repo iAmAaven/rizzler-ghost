@@ -4725,8 +4725,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0021499991, y: 0.00075000525, z: 0}
-    m_Extent: {x: 1.50265, y: 1.99645, z: 0}
+    m_Center: {x: 0.0026000142, y: 0.0020500422, z: 0}
+    m_Extent: {x: 1.5060999, y: 2.0043502, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8739,8 +8739,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.005249977, y: -0.010949969, z: 0}
-    m_Extent: {x: 1.54545, y: 1.77255, z: 0}
+    m_Center: {x: 0.00075000525, y: -0.005949974, z: 0}
+    m_Extent: {x: 1.5545499, y: 1.77625, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.5
@@ -8958,6 +8958,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5874741412926242870, guid: ad074f7a4aca92e418d2385792107646, type: 3}
+      propertyPath: m_text
+      value: W1-13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9006,7 +9010,7 @@ AudioSource:
   m_GameObject: {fileID: 8963739678400192182}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 8843936854155362832, guid: 0ccad16c4dac2b840b0056340b81d459, type: 2}
   m_audioClip: {fileID: 8300000, guid: cd73325bf68ce5c41af4b939df00771e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1

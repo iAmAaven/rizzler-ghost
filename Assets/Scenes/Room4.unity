@@ -431,7 +431,7 @@ AudioSource:
   m_GameObject: {fileID: 371867846}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 8843936854155362832, guid: 0ccad16c4dac2b840b0056340b81d459, type: 2}
   m_audioClip: {fileID: 8300000, guid: 2af19e7fb8e65204598a3e0489aae5ae, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -5015,7 +5015,7 @@ AudioSource:
   m_GameObject: {fileID: 1184756534}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 8843936854155362832, guid: 0ccad16c4dac2b840b0056340b81d459, type: 2}
   m_audioClip: {fileID: 8300000, guid: 2af19e7fb8e65204598a3e0489aae5ae, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -5273,7 +5273,7 @@ AudioSource:
   m_GameObject: {fileID: 1317896439}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 8843936854155362832, guid: 0ccad16c4dac2b840b0056340b81d459, type: 2}
   m_audioClip: {fileID: 8300000, guid: 2af19e7fb8e65204598a3e0489aae5ae, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -5646,7 +5646,7 @@ AudioSource:
   m_GameObject: {fileID: 1708427483}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 8843936854155362832, guid: 0ccad16c4dac2b840b0056340b81d459, type: 2}
   m_audioClip: {fileID: 8300000, guid: 2af19e7fb8e65204598a3e0489aae5ae, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -5886,6 +5886,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5874741412926242870, guid: ad074f7a4aca92e418d2385792107646, type: 3}
+      propertyPath: m_text
+      value: W1-4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6031,8 +6035,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0069999695, y: -0.008300006, z: 0}
-    m_Extent: {x: 1.546, y: 1.7643001, z: 0}
+    m_Center: {x: -0.0022999644, y: -0.013100028, z: 0}
+    m_Extent: {x: 1.5541, y: 1.7752, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.5
@@ -7042,7 +7046,7 @@ AudioSource:
   m_GameObject: {fileID: 5110067712778312137}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 8843936854155362832, guid: 0ccad16c4dac2b840b0056340b81d459, type: 2}
   m_audioClip: {fileID: 8300000, guid: cd73325bf68ce5c41af4b939df00771e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1

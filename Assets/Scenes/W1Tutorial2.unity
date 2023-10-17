@@ -311,6 +311,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5480463626472724305, guid: ad074f7a4aca92e418d2385792107646, type: 3}
+      propertyPath: blueStarName
+      value: BlueStarTutorial1
+      objectReference: {fileID: 0}
     - target: {fileID: 5748723701086544217, guid: ad074f7a4aca92e418d2385792107646, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -350,6 +354,10 @@ PrefabInstance:
     - target: {fileID: 5748723701086544217, guid: ad074f7a4aca92e418d2385792107646, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874741412926242870, guid: ad074f7a4aca92e418d2385792107646, type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5226,8 +5234,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0036500096, y: -0.0097, z: 0}
-    m_Extent: {x: 1.54825, y: 1.7760999, z: 0}
+    m_Center: {x: 0.0043500066, y: -0.013750017, z: 0}
+    m_Extent: {x: 1.5422499, y: 1.76775, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.5
@@ -5444,7 +5452,7 @@ AudioSource:
   m_GameObject: {fileID: 3319471367788082980}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 8843936854155362832, guid: 0ccad16c4dac2b840b0056340b81d459, type: 2}
   m_audioClip: {fileID: 8300000, guid: cd73325bf68ce5c41af4b939df00771e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -5585,8 +5593,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0007996559, y: 0.49629998, z: 0}
-    m_Extent: {x: 10.503901, y: 6.0052996, z: 0}
+    m_Center: {x: -0.00024986267, y: 0.50285006, z: 0}
+    m_Extent: {x: 10.50935, y: 5.99905, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -6227,6 +6235,7 @@ SceneRoots:
   - {fileID: 5439554344698339165}
   - {fileID: 1287847470}
   - {fileID: 1184727213966043953}
+  - {fileID: 1474319538}
   - {fileID: 1172097881}
   - {fileID: 471428451}
   - {fileID: 335075589}
@@ -6244,4 +6253,3 @@ SceneRoots:
   - {fileID: 1653408303}
   - {fileID: 443861492}
   - {fileID: 350461324}
-  - {fileID: 1474319538}
