@@ -6,11 +6,13 @@ using UnityEngine.InputSystem;
 public class BigDoorSystem : MonoBehaviour
 {
     public Animator bigDoorAnim;
+    public Animator buttonAnim;
     private bool isInRange = false;
     void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.tag == "Player")
         {
+            buttonAnim.SetTrigger("InRange");
             isInRange = true;
         }
     }
@@ -19,6 +21,7 @@ public class BigDoorSystem : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")
         {
+            buttonAnim.SetTrigger("OutOfRange");
             isInRange = false;
         }
     }
