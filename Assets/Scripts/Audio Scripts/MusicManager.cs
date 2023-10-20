@@ -2,14 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
 
 public class MusicManager : MonoBehaviour
 {
-    public AudioSource music;
+    public AudioMixer masterMixer;
 
-    void Update()
+    void Start()
     {
-        music.volume = PlayerPrefs.GetFloat("musicVolume");
+        masterMixer.SetFloat("musicVolume", Mathf.Log10(PlayerPrefs.GetFloat("musicVolume")) * 20);
+        masterMixer.SetFloat("sfxVolume", Mathf.Log10(PlayerPrefs.GetFloat("sfxVolume")) * 20);
     }
 }

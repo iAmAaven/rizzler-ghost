@@ -15,7 +15,6 @@ public class SaveSystem : MonoBehaviour
 
     public void DeleteBlueStarData()
     {
-        PlayerPrefs.DeleteKey("BlueStarTutorial");
         for (int i = 1; i <= 28; i++)
         {
             PlayerPrefs.DeleteKey("BlueStar" + i);

@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     // PRIVATES
 
     private float horizontalMovement;
-    private bool isGrounded;
+    [HideInInspector] public bool isGrounded;
     private PauseMenu pauseMenu;
     private Rigidbody2D rb;
     private Animator anim;

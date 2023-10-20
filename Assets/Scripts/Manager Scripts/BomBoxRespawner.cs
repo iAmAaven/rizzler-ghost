@@ -27,7 +27,7 @@ public class BomBoxRespawner : MonoBehaviour
     void Update()
     {
         isInRange = Physics2D.OverlapBox(inRangeArea.position,
-            new Vector2(detectionWidth, detectionHeight), playerLayer);
+            new Vector2(detectionWidth, detectionHeight), 1, playerLayer);
     }
 
     void OnDrawGizmosSelected()
@@ -39,9 +39,6 @@ public class BomBoxRespawner : MonoBehaviour
 
     public void PressRedButton(InputAction.CallbackContext context)
     {
-        if (isInRange == false)
-            return;
-
         if (context.performed && isInRange == true && buttonPressed == false)
         {
             buttonAnim.SetTrigger("Interact");

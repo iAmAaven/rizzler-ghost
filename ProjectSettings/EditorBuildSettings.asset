@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/W1Tutorial2.unity
     guid: cecbf655b679e9a43a1882340e624ad9
   - enabled: 1
+    path: Assets/Scenes/W1Tutorial3.unity
+    guid: e5f8a294f18066844bca3430e61e082a
+  - enabled: 1
+    path: Assets/Scenes/W1Tutorial4.unity
+    guid: bbace98124887194db08372fbaa534a1
+  - enabled: 1
     path: Assets/Scenes/Room1.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
