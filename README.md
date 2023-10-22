@@ -1,6 +1,6 @@
 # Rizzler Ghost
 ## About this project
-I'm developing a small 2D puzzle game for a school project using Unity.  
+I'm developing a small 2D puzzle game using Unity.  
 This project remains unfinished, and I've made this repository public for those curious individuals interested in tracking my progress.  
 
 ### Who is Rizzler the Ghost?
