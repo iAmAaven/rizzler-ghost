@@ -12,7 +12,7 @@ public class NextWorldCheck : MonoBehaviour
     private Button button;
     private bool allLevelsCompleted = false;
 
-    void Start()
+    void OnEnable()
     {
         button = GetComponent<Button>();
         button.enabled = false;

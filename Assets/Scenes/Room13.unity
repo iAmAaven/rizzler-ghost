@@ -143,6 +143,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 6.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8832861716195508363, guid: a63c1fd4ddb1da64c81f07590b45bbb6, type: 3}
+      propertyPath: spriteTime
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9023294452710704418, guid: a63c1fd4ddb1da64c81f07590b45bbb6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.5
@@ -4729,8 +4733,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0048499703, y: -0.0048000216, z: 0}
-    m_Extent: {x: 1.5044501, y: 2.004, z: 0}
+    m_Center: {x: 0.00020003319, y: -0.00019997358, z: 0}
+    m_Extent: {x: 1.5001, y: 2.0001, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8738,8 +8742,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0069000125, y: -0.008049965, z: 0}
-    m_Extent: {x: 1.5444, y: 1.77845, z: 0}
+    m_Center: {x: -0.00050002337, y: -0.008249998, z: 0}
+    m_Extent: {x: 1.5453999, y: 1.77145, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.5
