@@ -5782,8 +5782,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0035000443, y: -0.0034000278, z: 0}
-    m_Extent: {x: 1.4990001, y: 1.9972, z: 0}
+    m_Center: {x: -0.00029999018, y: -0.00034999847, z: 0}
+    m_Extent: {x: 1.5005, y: 1.99965, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -5996,8 +5996,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.008549988, y: -0.005699992, z: 0}
-    m_Extent: {x: 1.5450499, y: 1.771, z: 0}
+    m_Center: {x: -0.00045001507, y: -0.008300006, z: 0}
+    m_Extent: {x: 1.54655, y: 1.7706001, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.5
@@ -6265,7 +6265,7 @@ GameObject:
   - component: {fileID: 4551466819743092660}
   m_Layer: 0
   m_Name: ButtonDoorSystem
-  m_TagString: Untagged
+  m_TagString: IgnoreCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

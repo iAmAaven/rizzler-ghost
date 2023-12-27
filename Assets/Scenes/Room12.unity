@@ -4677,6 +4677,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8832861716195508363, guid: a63c1fd4ddb1da64c81f07590b45bbb6, type: 3}
+      propertyPath: spriteTime
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9023294452710704418, guid: a63c1fd4ddb1da64c81f07590b45bbb6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.499495
@@ -8483,8 +8487,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0015499592, y: -0.008300006, z: 0}
-    m_Extent: {x: 1.53845, y: 1.7679999, z: 0}
+    m_Center: {x: -0.00045001507, y: -0.008899987, z: 0}
+    m_Extent: {x: 1.54575, y: 1.7707, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.5

@@ -407,6 +407,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 367733479324883061, guid: 594421b135e05d04d9bbf56dd579591f, type: 3}
+      propertyPath: doorCloseTimer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 367733479324883061, guid: 594421b135e05d04d9bbf56dd579591f, type: 3}
       propertyPath: closeDoorsAfter
       value: 1
       objectReference: {fileID: 0}
@@ -6877,8 +6881,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.005400002, y: -0.016750038, z: 0}
-    m_Extent: {x: 1.5488, y: 1.7709501, z: 0}
+    m_Center: {x: -0.0012000203, y: -0.008249998, z: 0}
+    m_Extent: {x: 1.5462999, y: 1.77045, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.5
@@ -7600,8 +7604,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.9943001, y: 0.32035005, z: 0}
-    m_Extent: {x: 6.0067005, y: 1.67425, z: 0}
+    m_Center: {x: -1.9971001, y: 0.3243, z: 0}
+    m_Extent: {x: 6.002, y: 1.6754, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
