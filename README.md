@@ -21,9 +21,9 @@ Thank **you** for showing interest in my first ever video game.
 **Special thanks to the playtesters for their time, input and help.** 🖤
   
 ### Copyright Notice
-All original content in this repository is the intellectual property of Aapo Harjunpää and is protected by copyright law.  
+All original content in this repository is the intellectual property of Aaven (iAmAaven) and is protected by copyright law.  
 Any unauthorized use, distribution, or reproduction of this content without permission is strictly prohibited.  
-© 2023 Aapo Harjunpää  
+© 2023 Aaven  
 ### License
 This project is licensed under the GNU GENERAL PUBLIC LICENSE Version 3. See the [LICENSE.md](LICENSE.md) file for details.  
 Thank you for respecting my creative work!
