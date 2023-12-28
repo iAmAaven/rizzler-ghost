@@ -17,7 +17,7 @@ In W2, Rizzler has acquired the ability to control the magnet balls through the 
 > Check the [Issues](https://github.com/iAmAapo/rizzler-ghost/issues) for more information about the upcoming features.
   
 ## Thank you
-Thank **you** for showing interest in my first ever video game.  
+Thank **you** for showing interest in my first ever solo video game. If you're interested in my previous works, you can check out [my itch.io page](https://iamaaven.itch.io).  
 **Special thanks to the playtesters for their time, input and help.** 🖤
   
 ### Copyright Notice
