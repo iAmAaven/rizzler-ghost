@@ -21,7 +21,7 @@ public class FinalNPC : MonoBehaviour
             ghost = possibleGhosts[0];
             ghostNumber = 0;
         }
-        else if (randomChance > 39 && randomChance < 96)
+        else if (randomChance >= 40 && randomChance <= 70)
         {
             ghost = possibleGhosts[1];
             ghostNumber = 1;
