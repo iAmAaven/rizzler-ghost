@@ -41,7 +41,6 @@ Transform:
   - {fileID: 3638710973623425509}
   - {fileID: 7238432936445996108}
   - {fileID: 1943535237164330023}
-  - {fileID: 1444011150104987460}
   - {fileID: 6450335385844695189}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -252,7 +251,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 8843936854155362832, guid: 0ccad16c4dac2b840b0056340b81d459, type: 2}
   m_audioClip: {fileID: 8300000, guid: eba0079a4d927e9408404cc1215feefe, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.598
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -588,37 +587,6 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!1 &3549679250462882702
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1444011150104987460}
-  m_Layer: 6
-  m_Name: jumpSFX
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1444011150104987460
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3549679250462882702}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8442743245508613399}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3673003072740201073
 GameObject:
   m_ObjectHideFlags: 0

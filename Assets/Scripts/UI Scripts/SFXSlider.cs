@@ -11,7 +11,14 @@ public class SFXSlider : MonoBehaviour
 
     void Start()
     {
-        sfxSlider.value = PlayerPrefs.GetFloat("sfxVolume");
+        if (PlayerPrefs.HasKey("sfxVolume"))
+        {
+            sfxSlider.value = PlayerPrefs.GetFloat("sfxVolume");
+        }
+        else
+        {
+            sfxSlider.value = 1;
+        }
     }
     public void VolumeChange()
     {
