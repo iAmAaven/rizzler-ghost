@@ -51,7 +51,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 620127929255678974}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
@@ -167,6 +167,7 @@ MonoBehaviour:
   groundCheckRadius: 0.29
   jumpSFX: {fileID: 5312076527257091297}
   isGrounded: 0
+  toggleOldInput: 1
 --- !u!50 &9216489119041514804
 Rigidbody2D:
   serializedVersion: 4
@@ -939,6 +940,7 @@ MonoBehaviour:
     m_Bits: 25088
   throwSFX: {fileID: 8740795871583390306}
   hasBeenShot: 0
+  toggleOldInput: 1
 --- !u!114 &2768663452858443696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -946,7 +948,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5819800301935371210}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 

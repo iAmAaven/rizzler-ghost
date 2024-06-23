@@ -8926,7 +8926,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1333091946043674094}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
@@ -9304,8 +9304,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.50055, y: -1.0000999, z: 0}
-    m_Extent: {x: 7.0001497, y: 2.5009, z: 0}
+    m_Center: {x: -1.4996498, y: -1.0000501, z: 0}
+    m_Extent: {x: 7.0001497, y: 2.50035, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -9725,8 +9725,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.00014996529, y: -0.008249998, z: 0}
-    m_Extent: {x: 1.54625, y: 1.77085, z: 0}
+    m_Center: {x: -0.00020003319, y: -0.00879997, z: 0}
+    m_Extent: {x: 1.546, y: 1.7712, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.5
@@ -9759,6 +9759,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   sceneToLoad: Room11
+  toggleOldInput: 1
 --- !u!212 &7767238245627565802
 SpriteRenderer:
   m_ObjectHideFlags: 0

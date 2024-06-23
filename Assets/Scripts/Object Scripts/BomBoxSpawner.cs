@@ -20,7 +20,13 @@ public class BomBoxSpawner : MonoBehaviour
 
     private bool isInRange = false;
     private bool buttonOutlineOn = false;
+    [SerializeField] private bool toggleOldInput = false;
+    private PauseMenu pauseMenu;
 
+    void Start()
+    {
+        pauseMenu = FindAnyObjectByType<PauseMenu>();
+    }
     void Update()
     {
         isInRange = Physics2D.OverlapBox(transform.position,
@@ -36,10 +42,17 @@ public class BomBoxSpawner : MonoBehaviour
             buttonAnim.SetTrigger("OutOfRange");
             buttonOutlineOn = false;
         }
+
+        if (!pauseMenu.isGamePaused && toggleOldInput && Input.GetButtonDown("OpenDoor")
+            && isInRange && FindAnyObjectByType<BomBox>() == false)
+        {
+            SpawnBomBox();
+        }
     }
     public void ButtonPress(InputAction.CallbackContext context)
     {
-        if (context.performed && isInRange && FindAnyObjectByType<BomBox>() == false)
+        if (!pauseMenu.isGamePaused && context.performed
+            && isInRange && FindAnyObjectByType<BomBox>() == false && !toggleOldInput)
         {
             SpawnBomBox();
         }

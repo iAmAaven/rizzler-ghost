@@ -6490,6 +6490,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   sceneToLoad: Room8
+  toggleOldInput: 1
 --- !u!114 &799089845290846778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6524,8 +6525,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0011999607, y: -0.008549988, z: 0}
-    m_Extent: {x: 1.546, y: 1.7716501, z: 0}
+    m_Center: {x: -0.00060003996, y: -0.008450031, z: 0}
+    m_Extent: {x: 1.5464001, y: 1.77115, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.5
@@ -6547,7 +6548,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5744934579789837670}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
@@ -6672,6 +6673,7 @@ MonoBehaviour:
   timeToRespawn: 2
   startPoint: {fileID: 2678050793812350363}
   playerPrefab: {fileID: 620127929255678974, guid: a8407aa91c252ad45abc79ffe5c2e566, type: 3}
+  toggleOldInput: 1
 --- !u!114 &3224926447942351666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6765,8 +6767,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.5, y: -1.5002999, z: 0}
-    m_Extent: {x: 10.0007, y: 3.0004, z: 0}
+    m_Center: {x: -1.5002003, y: -1.4997001, z: 0}
+    m_Extent: {x: 10.0006, y: 3, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -6883,9 +6885,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2595474646956348737, guid: b4113244602d3b34e901a32a563fc9b1, type: 3}
+      propertyPath: toggleOldInput
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4551466819352539562, guid: b4113244602d3b34e901a32a563fc9b1, type: 3}
       propertyPath: m_Name
       value: BigDoorSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687710741398838202, guid: b4113244602d3b34e901a32a563fc9b1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7877488213826639108, guid: b4113244602d3b34e901a32a563fc9b1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7071,7 +7081,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9205197282232281579}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 

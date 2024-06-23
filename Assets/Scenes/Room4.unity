@@ -6306,6 +6306,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   sceneToLoad: Room5
+  toggleOldInput: 1
 --- !u!114 &799089845290846778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6340,8 +6341,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.00055003166, y: -0.008700013, z: 0}
-    m_Extent: {x: 1.54555, y: 1.7714, z: 0}
+    m_Center: {x: -0.00049996376, y: -0.008200049, z: 0}
+    m_Extent: {x: 1.5466, y: 1.7716, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.5
@@ -6363,7 +6364,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5744934579789837670}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
@@ -6488,6 +6489,7 @@ MonoBehaviour:
   timeToRespawn: 2
   startPoint: {fileID: 2678050793812350363}
   playerPrefab: {fileID: 620127929255678974, guid: a8407aa91c252ad45abc79ffe5c2e566, type: 3}
+  toggleOldInput: 1
 --- !u!4 &3376654510199214467
 Transform:
   m_ObjectHideFlags: 0
@@ -6845,7 +6847,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9205197282232281579}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 

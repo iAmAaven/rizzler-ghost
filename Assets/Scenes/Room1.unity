@@ -5875,6 +5875,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 858150167283578764, guid: 83164d546f21a3b4e8175c743d2a0117, type: 3}
+      propertyPath: toggleOldInput
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6444615588419087807, guid: 83164d546f21a3b4e8175c743d2a0117, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8347869862908661367, guid: 83164d546f21a3b4e8175c743d2a0117, type: 3}
       propertyPath: m_Name
       value: EndDoor

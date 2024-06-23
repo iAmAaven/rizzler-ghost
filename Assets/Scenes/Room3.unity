@@ -5342,6 +5342,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   sceneToLoad: Room4
+  toggleOldInput: 1
 --- !u!61 &756215472794283868
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5440,8 +5441,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.00050002337, y: -0.008350015, z: 0}
-    m_Extent: {x: 1.5462, y: 1.77145, z: 0}
+    m_Center: {x: -0.00060003996, y: -0.008099973, z: 0}
+    m_Extent: {x: 1.5455999, y: 1.7705, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.5
@@ -5498,7 +5499,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5744934579789837670}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
@@ -5931,6 +5932,7 @@ MonoBehaviour:
   timeToRespawn: 2
   startPoint: {fileID: 2678050793812350363}
   playerPrefab: {fileID: 620127929255678974, guid: a8407aa91c252ad45abc79ffe5c2e566, type: 3}
+  toggleOldInput: 1
 --- !u!82 &2871027713321439553
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6269,8 +6271,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.0005999, y: -1.5000001, z: 0}
-    m_Extent: {x: 8.4998, y: 3.0005002, z: 0}
+    m_Center: {x: -1.0005498, y: -1.5000999, z: 0}
+    m_Extent: {x: 8.49995, y: 3.0008, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -6683,7 +6685,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9205197282232281579}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 

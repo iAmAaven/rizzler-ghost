@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     private PauseMenu pauseMenu;
     private Rigidbody2D rb;
     private Animator anim;
+    [SerializeField] private bool toggleOldInput = false;
 
     void Start()
     {
@@ -40,6 +41,21 @@ public class PlayerMovement : MonoBehaviour
         if (pauseMenu.isGamePaused == false)
         {
             isGrounded = Physics2D.OverlapCircle(feet.position, groundCheckRadius, whatIsGround);
+
+            if (toggleOldInput == true)
+            {
+                horizontalMovement = Input.GetAxisRaw("Horizontal");
+
+                if (Input.GetButtonDown("Jump") && isGrounded)
+                {
+                    anim.SetTrigger("Jump");
+                    rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                }
+                else if (Input.GetButtonUp("Jump") && rb.velocity.y > 0)
+                {
+                    rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+                }
+            }
             AnimateCharacter();
         }
     }
@@ -79,11 +95,14 @@ public class PlayerMovement : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
-        horizontalMovement = context.ReadValue<Vector2>().x;
+        if (toggleOldInput == false)
+        {
+            horizontalMovement = context.ReadValue<Vector2>().x;
+        }
     }
     public void Jump(InputAction.CallbackContext context)
     {
-        if (pauseMenu.isGamePaused == false)
+        if (pauseMenu.isGamePaused == false && toggleOldInput == false)
         {
             if (context.performed && isGrounded)
             {

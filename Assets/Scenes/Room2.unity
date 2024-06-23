@@ -6006,6 +6006,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   sceneToLoad: Room3
+  toggleOldInput: 1
 --- !u!114 &799089845290846778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6040,8 +6041,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0009999871, y: -0.007950008, z: 0}
-    m_Extent: {x: 1.5460999, y: 1.7713499, z: 0}
+    m_Center: {x: -0.00089997053, y: -0.008849978, z: 0}
+    m_Extent: {x: 1.5462, y: 1.77115, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.5
@@ -6448,8 +6449,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.5004501, y: 0.3157, z: 0}
-    m_Extent: {x: 6.50035, y: 1.6852, z: 0}
+    m_Center: {x: -1.4999499, y: 0.3151, z: 0}
+    m_Extent: {x: 6.50055, y: 1.6856, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -6560,7 +6561,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9205197282232281579}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 

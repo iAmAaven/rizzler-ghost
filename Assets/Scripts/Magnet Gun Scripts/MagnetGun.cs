@@ -59,6 +59,7 @@ public class MagnetGun : MonoBehaviour
     private Vector2 mousePosition;
     private GameObject magnet;
     private PauseMenu pauseMenu;
+    [SerializeField] private bool toggleOldInput = false;
 
     void Awake()
     {
@@ -102,29 +103,36 @@ public class MagnetGun : MonoBehaviour
 
             // Call the animation function
             AnimatePullGun();
+
+            if (Input.GetButtonDown("Fire1") && toggleOldInput && !isTouchingAnObject && !hasBeenShot)
+            {
+                Shoot();
+            }
         }
     }
 
     // Called when the Shoot action is triggered
-    public void Shoot(InputAction.CallbackContext context)
+    public void InputShoot(InputAction.CallbackContext context)
     {
         // Check if the game is not paused and the gun is not touching an object
-        if (pauseMenu.isGamePaused == false && isTouchingAnObject == false)
+        // Check if the shoot action was performed and the gun hasn't been shot yet
+        if (!pauseMenu.isGamePaused && !isTouchingAnObject && context.performed && !hasBeenShot && !toggleOldInput)
         {
-            // Check if the shoot action was performed and the gun hasn't been shot yet
-            if (context.performed && hasBeenShot == false)
-            {
-                throwSFX.PlayThrowSound();
-
-                // Instantiate a magnet prefab and apply a force to it
-                magnet = Instantiate(magnetPrefab, firePoint.position, firePoint.rotation);
-                Rigidbody2D magnetRB = magnet.GetComponent<Rigidbody2D>();
-                magnetRB.AddForce(firePoint.right * firePower, ForceMode2D.Impulse);
-
-                // Mark the gun as shot
-                hasBeenShot = true;
-            }
+            Shoot();
         }
+    }
+
+    void Shoot()
+    {
+        throwSFX.PlayThrowSound();
+
+        // Instantiate a magnet prefab and apply a force to it
+        magnet = Instantiate(magnetPrefab, firePoint.position, firePoint.rotation);
+        Rigidbody2D magnetRB = magnet.GetComponent<Rigidbody2D>();
+        magnetRB.AddForce(firePoint.right * firePower, ForceMode2D.Impulse);
+
+        // Mark the gun as shot
+        hasBeenShot = true;
     }
 
     // Handle the gun animation
