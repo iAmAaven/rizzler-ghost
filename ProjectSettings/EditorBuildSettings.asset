@@ -66,9 +66,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Room13.unity
     guid: 5af322980bed8be4293bc0660b8a8a3d
   - enabled: 1
-    path: Assets/Scenes/Room13.unity
-    guid: 5af322980bed8be4293bc0660b8a8a3d
-  - enabled: 1
     path: Assets/Scenes/Room14.unity
     guid: 364850bced5076744a95df4f3561389f
   - enabled: 1

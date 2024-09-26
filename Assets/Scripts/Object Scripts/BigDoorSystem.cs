@@ -8,6 +8,21 @@ public class BigDoorSystem : MonoBehaviour
     public Animator bigDoorAnim;
     public Animator buttonAnim;
     private bool isInRange = false;
+    [SerializeField] private bool toggleOldInput = false;
+    private PauseMenu pauseMenu;
+
+    void Start()
+    {
+        pauseMenu = FindAnyObjectByType<PauseMenu>();
+    }
+
+    void Update()
+    {
+        if (toggleOldInput && Input.GetButtonDown("OpenDoor") && !pauseMenu.isGamePaused && isInRange)
+        {
+            AnimateDoor();
+        }
+    }
     void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.tag == "Player")
@@ -28,19 +43,24 @@ public class BigDoorSystem : MonoBehaviour
 
     public void OpenDoor(InputAction.CallbackContext context)
     {
-        if (context.performed && isInRange == true)
+        if (toggleOldInput == false && context.performed && isInRange == true && !pauseMenu.isGamePaused)
         {
-            if (bigDoorAnim.GetBool("IsOpening") == false)
-            {
-                bigDoorAnim.SetBool("IsOpening", true);
-                bigDoorAnim.SetBool("IsClosing", false);
-                return;
-            }
-            else if (bigDoorAnim.GetBool("IsClosing") == false)
-            {
-                bigDoorAnim.SetBool("IsClosing", true);
-                bigDoorAnim.SetBool("IsOpening", false);
-            }
+            AnimateDoor();
+        }
+    }
+
+    void AnimateDoor()
+    {
+        if (bigDoorAnim.GetBool("IsOpening") == false)
+        {
+            bigDoorAnim.SetBool("IsOpening", true);
+            bigDoorAnim.SetBool("IsClosing", false);
+            return;
+        }
+        else if (bigDoorAnim.GetBool("IsClosing") == false)
+        {
+            bigDoorAnim.SetBool("IsClosing", true);
+            bigDoorAnim.SetBool("IsOpening", false);
         }
     }
 }

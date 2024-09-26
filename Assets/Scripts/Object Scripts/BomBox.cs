@@ -38,14 +38,6 @@ public class BomBox : MonoBehaviour
         explosionAnim = GetComponent<Animator>();
     }
 
-    void Explode()
-    {
-        // instantiate box parts to fly off to random direction
-        explosionSFX.Play();
-        explosionAnim.Play("bomBoxExplosion");
-        Invoke("ExplosionOnTimer", 0.5f);
-    }
-
     IEnumerator Countdown()
     {
         for (int i = 0; i < boxSprites.Length; i++)
@@ -55,6 +47,15 @@ public class BomBox : MonoBehaviour
         }
         Explode();
     }
+
+    void Explode()
+    {
+        // instantiate box parts to fly off to random direction
+        explosionSFX.Play();
+        explosionAnim.Play("bomBoxExplosion");
+        Invoke("ExplosionOnTimer", 0.5f);
+    }
+
     void ExplosionOnTimer()
     {
         spriteRenderer.sprite = null;
@@ -86,17 +87,6 @@ public class BomBox : MonoBehaviour
         FindAnyObjectByType<DeathManager>().PlayerDied(); // CALLS THE PlayerDied METHOD FROM DEATHMANAGER
         FindAnyObjectByType<RespawnManager>().RespawnPlayer(); // CALLS THE RespawnPlayer METHOD FROM RESPAWNMANAGER
 
-        if (FindAnyObjectByType<ObjectRespawnManager>() == true)
-        {
-            FindAnyObjectByType<ObjectRespawnManager>().RespawnObjects();
-        }
-
         Destroy(parentPos.gameObject, 1);
-    }
-
-    void RespawnBox()
-    {
-        if (FindAnyObjectByType<ObjectRespawnManager>() == true)
-            FindAnyObjectByType<ObjectRespawnManager>().RespawnObjects();
     }
 }

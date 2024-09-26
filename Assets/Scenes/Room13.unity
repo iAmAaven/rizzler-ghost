@@ -697,63 +697,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &531437840
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3843545648893867041, guid: e673b250fef58894183f3b36b77259b4, type: 3}
-      propertyPath: m_Name
-      value: CursorManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 8603169908838102309, guid: e673b250fef58894183f3b36b77259b4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8603169908838102309, guid: e673b250fef58894183f3b36b77259b4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8603169908838102309, guid: e673b250fef58894183f3b36b77259b4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8603169908838102309, guid: e673b250fef58894183f3b36b77259b4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8603169908838102309, guid: e673b250fef58894183f3b36b77259b4, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8603169908838102309, guid: e673b250fef58894183f3b36b77259b4, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8603169908838102309, guid: e673b250fef58894183f3b36b77259b4, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8603169908838102309, guid: e673b250fef58894183f3b36b77259b4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8603169908838102309, guid: e673b250fef58894183f3b36b77259b4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8603169908838102309, guid: e673b250fef58894183f3b36b77259b4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e673b250fef58894183f3b36b77259b4, type: 3}
 --- !u!1001 &539086233
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4733,8 +4676,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.00020003319, y: -0.00019997358, z: 0}
-    m_Extent: {x: 1.5001, y: 2.0001, z: 0}
+    m_Center: {x: -0.00045001507, y: -0.00019991398, z: 0}
+    m_Extent: {x: 1.50055, y: 2.0008001, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8215,7 +8158,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1333091946043674094}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
@@ -8742,8 +8685,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.00050002337, y: -0.008249998, z: 0}
-    m_Extent: {x: 1.5453999, y: 1.77145, z: 0}
+    m_Center: {x: -0.0009999871, y: -0.00819999, z: 0}
+    m_Extent: {x: 1.5458, y: 1.7702999, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.5
@@ -8776,6 +8719,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   sceneToLoad: Room14
+  toggleOldInput: 1
 --- !u!212 &7767238245627565802
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9016,7 +8960,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 8843936854155362832, guid: 0ccad16c4dac2b840b0056340b81d459, type: 2}
   m_audioClip: {fileID: 8300000, guid: cd73325bf68ce5c41af4b939df00771e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.703
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -9221,7 +9165,6 @@ SceneRoots:
   - {fileID: 442463890}
   - {fileID: 2112416839}
   - {fileID: 1247376355}
-  - {fileID: 531437840}
   - {fileID: 7148122361390884241}
   - {fileID: 7017049573169318804}
   - {fileID: 1447663104}

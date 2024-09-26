@@ -11,7 +11,14 @@ public class MusicSlider : MonoBehaviour
 
     void Start()
     {
-        musicSlider.value = PlayerPrefs.GetFloat("musicVolume");
+        if (PlayerPrefs.HasKey("musicVolume"))
+        {
+            musicSlider.value = PlayerPrefs.GetFloat("musicVolume");
+        }
+        else
+        {
+            musicSlider.value = 1;
+        }
     }
 
     public void VolumeChange()

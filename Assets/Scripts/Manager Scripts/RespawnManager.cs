@@ -18,13 +18,23 @@ public class RespawnManager : MonoBehaviour
     public Transform startPoint;
     public GameObject playerPrefab;
 
-
+    [SerializeField] private bool toggleOldInput = false;
+    private PauseMenu pauseMenu;
     void Awake()
     {
         // CALLS THE FindAllObjectsInScene METHOD WHEN THIS SCRIPT/GAMEOBJECT IS CREATED
         // FindAllObjectsInScene();
+
+        pauseMenu = FindAnyObjectByType<PauseMenu>();
     }
 
+    void Update()
+    {
+        if (!pauseMenu.isGamePaused && toggleOldInput && Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+    }
 
     // RESPAWNS PLAYER WHEN CALLED
     public void RespawnPlayer()
@@ -49,7 +59,7 @@ public class RespawnManager : MonoBehaviour
     // THIS METHOD IS USED BY THE NEW INPUT SYSTEM AND IS CALLED EVERY TIME "R" IS PRESSED
     public void RestartLevel(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && !pauseMenu.isGamePaused && !toggleOldInput)
         {
             // USES THE SCENEMANAGER TO LOAD THE CURRENT SCENE AGAIN, RESTARTING EVERYTHING
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
