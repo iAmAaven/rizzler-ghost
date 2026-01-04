@@ -97,12 +97,12 @@ public class Magnet : MonoBehaviour
             }
 
             // Updates the grabbedObject's properties and prepares it to be moved towards the MagnetGun
-            grabbedObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            grabbedObject.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
             pickableObject.objectGrabbed = true;
             pickableObject.followSpeed = returnSpeed;
 
             // Updates the properties and prepares the magnet to be moved towards the MagnetGun
-            rb.velocity = Vector2.zero;
+            rb.linearVelocity = Vector2.zero;
             circleCollider.enabled = false;
             rb.gravityScale = 0;
             grabbed = true;
@@ -160,13 +160,13 @@ public class Magnet : MonoBehaviour
         {
             magnetGun.hasBeenShot = false;
             Vector3 direction = (magnetGun.transform.position - transform.position).normalized;
-            objectRigidbody.velocity = direction * returnSpeed;
+            objectRigidbody.linearVelocity = direction * returnSpeed;
             // grabbedObject.GetComponent<PickableObject>().objectGrabbed = false;
         }
         else if (magnetGun == null)
         {
             // If the MagnetGun is missing, just stop the object's velocity and destroy the magnet
-            objectRigidbody.velocity = Vector2.zero;
+            objectRigidbody.linearVelocity = Vector2.zero;
 
             Destroy(gameObject);
         }
@@ -183,7 +183,7 @@ public class Magnet : MonoBehaviour
     void StopAllMotion()
     {
         rb.gravityScale = 0;
-        rb.velocity = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
         circleCollider.enabled = false;
         rb.freezeRotation = true;
 

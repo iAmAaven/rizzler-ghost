@@ -39,7 +39,7 @@ public class FinalNPC : MonoBehaviour
         if (collider.gameObject.tag == "Player")
         {
             anim.SetTrigger("Ghost" + ghostNumber);
-            collider.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            collider.gameObject.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
             collider.gameObject.GetComponent<PlayerMovement>().enabled = false;
             collider.gameObject.GetComponent<PlayerMovement>().isGrounded = false;
             Destroy(collider.gameObject, 1.5f);

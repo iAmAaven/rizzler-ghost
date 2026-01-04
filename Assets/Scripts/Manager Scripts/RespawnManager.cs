@@ -59,7 +59,7 @@ public class RespawnManager : MonoBehaviour
     // LOCATES EVERY GAMEOBJECT WITH THE PickableObject SCRIPT ATTACHED TO IT
     public void FindAllObjectsInScene()
     {
-        PickableObject[] pickableObjects = FindObjectsOfType<PickableObject>();
+        PickableObject[] pickableObjects = FindObjectsByType<PickableObject>(FindObjectsSortMode.None);
 
         // CALLS THE RefreshPullGun METHOD FROM EVERY PickableObject IN THE SCENE
         foreach (PickableObject objects in pickableObjects)

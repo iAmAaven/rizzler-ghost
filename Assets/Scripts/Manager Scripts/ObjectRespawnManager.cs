@@ -21,7 +21,7 @@ public class ObjectRespawnManager : MonoBehaviour
             {
                 if (fallenObject == objectsInRoom[i])
                 {
-                    fallenObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+                    fallenObject.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
                     fallenObject.transform.position = startingPoints[i].position;
                     fallenObject.transform.localRotation = new Quaternion(0, 0, 0, 0);
                 }

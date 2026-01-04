@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
         pauseMenu = FindAnyObjectByType<PauseMenu>();
 
-        PickableObject[] objects = GameObject.FindObjectsOfType<PickableObject>();
+        PickableObject[] objects = GameObject.FindObjectsByType<PickableObject>(FindObjectsSortMode.None);
         foreach (PickableObject pickable in objects)
         {
             pickable.RefreshMagnetGun();
@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void FixedUpdate()
     {
-        rb.velocity = new Vector2(horizontalMovement * playerSpeed, rb.velocity.y);
+        rb.linearVelocity = new Vector2(horizontalMovement * playerSpeed, rb.linearVelocity.y);
     }
 
     void AnimateCharacter()
@@ -92,11 +92,11 @@ public class PlayerMovement : MonoBehaviour
             if (context.started && isGrounded)
             {
                 anim.SetTrigger("Jump");
-                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             }
-            else if (context.canceled && rb.velocity.y > 0)
+            else if (context.canceled && rb.linearVelocity.y > 0)
             {
-                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
             }
         }
     }
